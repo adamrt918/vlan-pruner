@@ -1,0 +1,56 @@
+{
+    "desired_vlans" : 
+    [
+        {
+            "name" : "VLAN0020",
+            "description" : "BRB-INF",
+            "vlan_id" : 20,
+            "l3_interface" : "irb.20"
+        },
+        {
+            "name" : "VLAN0050",
+            "description" : "ATT",
+            "vlan_id" : 50
+        },
+        {
+            "name" : "VLAN0051",
+            "description" : "ERC",
+            "vlan_id" : 51
+        },
+        {
+            "name" : "VLAN0121",
+            "description" : "Management",
+            "vlan_id" : 121
+        },
+        {
+            "name" : "VLAN0122",
+            "description" : "Dante",
+            "vlan_id" : 122
+        },
+        {
+            "name" : "VLAN0123",
+            "description" : "SAS Audio Console Control",
+            "vlan_id" : 123
+        },
+        {
+            "name" : "VLAN0168",
+            "description" : "DMZ",
+            "vlan_id" : 168
+        },
+        {
+            "name" : "VLAN0253",
+            "description" : "Inside_Main",
+            "vlan_id" : 253
+        },
+        {
+            "name" : "VLAN0989",
+            "description" : "XCVR-test",
+            "vlan_id" : 989
+        },
+        {
+            "name" : "VLAN2140",
+            "description" : "Wireless-APs",
+            "vlan_id" : 2140
+        }
+    ]
+}

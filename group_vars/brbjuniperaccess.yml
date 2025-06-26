@@ -1,0 +1,26 @@
+# use the python3 interpreter
+ansible_python_interpreter: /usr/bin/python3
+
+# specify the user and authentication
+ansible_user: bgautosrv
+ansible_ssh_private_key_file: /home/bgautosrv/.ssh/id_ed25519
+
+# specify the OS and how to connect to it
+ansible_network_os: junipernetworks.junos.junos
+ansible_connection: ansible.netcommon.netconf
+
+#ssot variables
+radius_server: 10.10.1.206
+
+dns_server1: 10.13.1.3
+
+ntp_server: 132.163.97.3
+
+motd: |
+  This is a secured, private computer system. All Information contained on this system is deemed to be PRIVATE, PROPRIETARY, CONFIDENTIAL and the property of our company, its affiliates, divisions or subsidiaries. Unauthorized access or use is strictly prohibited. Any use of this company's resources must be in compliance with our policies including Electronic Mail/Communication, Information System Usage, Corporate Disclosure, Unauthorized Use of Software and the Code of Business Ethics.  By using this company's resources, you agree to comply with our policies. Any unauthorized access to or use of this company's resources may be punishable in a court of law and may include termination of employment or contract with the company.
+
+snmp_trap_group: 10.10.1.233
+
+vlans_path: /etc/ansible/group_vars/brbjuniperaccess/standard_vlans.json
+
+mgmt_vlan: 20
